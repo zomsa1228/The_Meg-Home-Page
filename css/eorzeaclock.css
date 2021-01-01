@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+
+/* ▼ eorzeaclock - 時計表示部分全体を囲む要素 ▼ */
+
+ #eorzeaclock{
+ position:relative;
+ margin: 1%;
+ padding:5px 0px;
+ width:160px;
+ border:1px solid #999999;
+ border-radius:5px;
+ background:#333333;
+ color:#ffffff;
+  text-align:center;
+ font-size:12px;
+ line-height:14px;
+ z-index: auto;
+}
+
+/* ▼ eorzeatime - エオルゼア時間（月/日/時/分） ▼ */
+
+#eorzeatime{
+ font-family:Georgia,Times New Roman;
+ text-shadow:0px 0px 3px rgba(0,0,0,0.5);
+ display:block;
+ z-index: auto;
+ 
+}
+#eorzeatime:before{
+ content:"";
+ position:absolute;
+ top:5px;
+ left:8px;
+ color:#444e54;
+ font-size:7px;
+ -webkit-text-size-adjust:none;
+ z-index: auto;
+}
+#eorzeatime:after{
+ content:"";
+ position:absolute;
+ top:5px;
+ left:133px;
+ color:#444e54;
+ font-size:7px;
+ -webkit-text-size-adjust:none;
+ z-index: auto;
+}
+#eorzeatime:hover:before,#eorzeatime:hover:after{
+ color:#000000;
+ z-index: auto;
+    
+}
+
+/* ▼ eorzeaclock2 - eorzeatime以外の箇所を囲む要素 ▼ */
+
+#eorzeaclock2{
+ width:160px;
+ border:1px solid #666666;
+ border-radius:5px;
+ background:#333333;
+ text-align:right;
+ display:none;
+ z-index: auto;
+}
+#eorzeaclock:hover #eorzeaclock2{
+ position:absolute;
+ top:28px;
+ left:-1px;
+ display:inline;
+ z-index:999;
+}
+* html #eorzeaclock:hover{
+ position:relative;
+ height: 50px;
+ z-index: auto;
+}
+
+/* ▼ eorzeatime2 - エオルゼア時間（年/月/日/時/分/秒） ▼ */
+
+#eorzeatime2{
+ margin:5px 5px 0px 5px;
+ display:block;
+ z-index: auto;
+}
+
+/* ▼ eorzeatime3 - エオルゼア時間（月属性/日属性/時属性） ▼ */
+
+#eorzeatime3{
+ margin:5px 5px 0px 5px;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_ice{
+ color:#d9ffff;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_water{
+ color:#a3ccf4;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_wind{
+ color:#b7ffcc;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_lightning{
+ color:#ebbceb;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_fire{
+ color:#ffb7b7;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_earth{
+ color:#ffffb7;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_astral{
+ color:#f9f9f6;
+ display:block;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_umbral{
+ color:#969690;
+ display:block;
+ z-index: auto;
+}
+.eorzeatime3_txt{
+ display:none;
+ z-index: auto;
+}
+#eorzeatime3 .eorzeatime3_txt{
+ display:inline;
+ z-index: auto;
+}
+
+/* ▼ moontime - 月齢（前後/カウントダウン） ▼ */
+
+#moontime{
+ margin:5px 5px 0px 5px;
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_NewMoon{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_WaxingCrescent{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_WaxingHalfMoon{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_WaxingGibbous{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_FullMoon{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_WaningGibbous{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_WaningHalfMoon{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_WaningCrescent{
+ display:block;
+ z-index: auto;
+}
+#moontime .moontime_txt.moontime_prev,#moontime .moontime_txt.moontime_next{
+ color:#777777;
+ z-index: auto;
+}
+#moontime .moontime_txt.moontime_prev:before{
+ content:"前";
+ z-index: auto;
+}
+#moontime .moontime_txt.moontime_next:before{
+ content:"後";
+ z-index: auto;
+}
+
+/* ▼ earthtime - 地球時間 ▼ */
+
+#earthtime{
+ margin:5px 5px 0px 5px;
+ display:block;
+ z-index: auto;
+}
+
+/* ▼ levetime - リーヴ受注権（カウントダウン） ▼ */
+
+#levetime{
+ margin:0px 5px 5px 5px;
+ display:block;
+ z-index: auto;
+} 

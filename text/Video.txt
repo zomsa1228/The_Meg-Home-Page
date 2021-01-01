@@ -1,0 +1,5 @@
+top page:拡張トレーラー 最新
+main.php:ネタ動画と一部のイベントの動画
+rule.php:
+request.php:最新 リアルイベント
+link.php:

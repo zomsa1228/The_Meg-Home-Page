@@ -1,0 +1,30 @@
+<DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="ja">
+<head>
+<meta https-equiv="Content-Type" Content="text/html;charset=UTF-8">
+<meta https-equiv="Content-Script-Type" content="text/javascript">
+
+<title>書き込み中</title>
+
+<script type="text/javascript">
+function loadText(){
+    var xmlhttps;
+
+    xmlhttps = new XMLhttpsRequest();
+    xmlhttps.open("GET", "./write.txt", false);
+    xmlhttps.send(null);
+    var text = xmlhttps.responseText;
+    var node = document.getElementById("resDiv");
+    node.innerText = text;
+}
+</script>
+
+</head>
+
+<body onload="loadText()">
+    <p style="font-size:150%;" id="resDiv">
+    </p>
+
+</body>
+</html>
