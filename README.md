@@ -1,3 +1,3 @@
-# this is the [RADAR'S CO]'s homepages
+# this is the The Meg's homepages
 
-サイトのバグについてはTwitterアカウント@zomasaまでご連絡下さい
+サイトのバグについてはTwitterアカウントDiscord アカウント roimy_zomsa#1502までご連絡下さい
