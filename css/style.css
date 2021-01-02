@@ -232,9 +232,11 @@ padding: 0px;
 
 .title{
     line-height:1em;
-    font-family: 'Amiri', serif;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 50%;
     font-size:7vw;
-    -webkit-text-stroke: 0.01em #F2F2F2;
+    /* text-shadow: 2px 2px 2px #cccccc; */
+    text-shadow:0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc,0 0 3px #ccc;
     color:#333333;
     padding:5vw;
     margin-bottom:2vw;
