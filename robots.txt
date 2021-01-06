@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /html/
-Allow: index.php
-Sitemap:https://queerer.conohawing.com/sitemap.xml

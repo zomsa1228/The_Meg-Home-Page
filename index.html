@@ -39,9 +39,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-    <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/device.min.js"></script> <!--OPTIONAL JQUERY PLUGIN-->
-    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/eorzeaclock.js" charset="UTF-8"></script>
@@ -53,41 +53,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
 
     <!-- <script type="text/javascript">
-            window.onload = function () { // ページ読み込み時に実行する無名関数
-            updateRead(); // １つ目の関数呼び出し
-            logRead(); // ２つ目の関数呼び出し
-        }
+        //     window.onload = function () { // ページ読み込み時に実行する無名関数
+        //     updateRead(); // １つ目の関数呼び出し
+        //     logRead(); // ２つ目の関数呼び出し
+        // }
 
-        function updateRead(){
-            var xmlhttps;
+        // function updateRead(){
+        //     var xmlhttps;
         
-            xmlhttps = new XMLhttpsRequest();
-            xmlhttps.open("GET", "./update/write.txt", false);
-            xmlhttps.send(null);
-            var text = xmlhttps.responseText;
-            var node = document.getElementById("update");
-            node.innerText = text;
-        }
-        function logRead(){
-            var xmlhttps;
+        //     xmlhttps = new XMLhttpsRequest();
+        //     xmlhttps.open("GET", "./update/write.txt", false);
+        //     xmlhttps.send(null);
+        //     var text = xmlhttps.responseText;
+        //     var node = document.getElementById("update");
+        //     node.innerText = text;
+        // }
+        // function logRead(){
+        //     var xmlhttps;
             
-            xmlhttps = new XMLhttpsRequest();
-            xmlhttps.open("GET", "./text/log.txt", false);
-            xmlhttps.send(null);
-            var text = xmlhttps.responseText;
-            var node = document.getElementById("log");
-            node.innerText = text;
-        }
+        //     xmlhttps = new XMLhttpsRequest();
+        //     xmlhttps.open("GET", "./text/log.txt", false);
+        //     xmlhttps.send(null);
+        //     var text = xmlhttps.responseText;
+        //     var node = document.getElementById("log");
+        //     node.innerText = text;
+        // }
+    $('#youtube').YTPlayer();
+
+    $('.youtube_valume').on('click', function() {
+        $('#youtube').YTPToggleVolume();
+        $(this).toggleClass('active');
+});
     </script> -->
 
+<!-- <div id="youtube-wrap">
+    <div id="youtube" data-property="{
+      videoURL: 'https://youtu.be/Dxd8MJxi5x4',
+      containment: '#youtube-wrap',
+      autoPlay: true,
+      loop: 1,
+      mute: true,
+      startAt: 0,
+      opacity: 1,
+      showControls: false,
+      showYTLogo: false,
+      onReady: function( player ) {
+        $('.loading').hide('slow');
+      }
+    }"></div>
+    <div class="loading">Loading...</div>
+  </div> -->
 
 </head>
 <body>
+
+<script type="text/javascript">
+$('#youtube').YTPlayer();
+
+$('.youtube_valume').on('click', function() {
+    $('#youtube').YTPToggleVolume();
+    $(this).toggleClass('active');
+});
+</script>
  <section class="big-background">
-    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=w11ehEx7kro',loop:1,containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>       
+    <a id="bgndVideo" class="player" data-property="{
+        videoURL:'https://www.youtube.com/watch?v=w11ehEx7kro',
+        containment: '#youtube-wrap',
+        loop:1,
+        containment:'body',
+        autoPlay:true, 
+        mute:true, 
+        startAt:0,
+        opacity:1,
+        showControls: false,
+        showYTLogo: false,
+        onReady: function( player ) {
+            $('.loading').hide('slow');
+          }
+        }"></a>      
         <div class="pattern">
             <div class="background ">
                 <div class="big-background-container">
+                    <div class="loading"><h1>Now Loading...</h1></div>
                     <h1 class="title">The Meg.
                     <br/>Japan FF14 Discord Server<br/><hr Class="hr"></h1>
                 </div>            
@@ -112,11 +159,12 @@
                             <li><a href="#">About us(Coming Soon)</a></li>
                             <li><a href="#">For the Admines(Coming Soon)</a></li>                            
                             <li><a href="#">Link (Coming Soon)</a></li>
+                            <!-- <li><a href="#"><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPToggleVolume()">ミュート/ミュート解除(機能しません)</button>
+                            <button style="vertical-align: middle" onclick="jQuery('#youtube').YTPUnmute()">ミュート解除(機能しません)</button></a></li> -->
                         </ul>
                     </div>
                 </div>
             </nav>
-
             <div class="visible-lg-block" id="eorzeaclock">&nbsp;</div><script type="text/javascript">EorzeaClock()</script>
             
                                                        
