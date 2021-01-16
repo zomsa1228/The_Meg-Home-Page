@@ -79,32 +79,12 @@
         //     var node = document.getElementById("log");
         //     node.innerText = text;
         // }
-    $('#youtube').YTPlayer();
+    
+        var myPlayer;
+        jQuery(function () {
+            myPlayer = jQuery("#youtube").YTPlayer({});
 
-    $('.youtube_valume').on('click', function() {
-        $('#youtube').YTPToggleVolume();
-        $(this).toggleClass('active');
-});
     </script> -->
-
-<!-- <div id="youtube-wrap">
-    <div id="youtube" data-property="{
-      videoURL: 'https://youtu.be/Dxd8MJxi5x4',
-      containment: '#youtube-wrap',
-      autoPlay: true,
-      loop: 1,
-      mute: true,
-      startAt: 0,
-      opacity: 1,
-      showControls: false,
-      showYTLogo: false,
-      onReady: function( player ) {
-        $('.loading').hide('slow');
-      }
-    }"></div>
-    <div class="loading">Loading...</div>
-  </div> -->
-
 </head>
 <body>
 
@@ -116,7 +96,7 @@ $('.youtube_valume').on('click', function() {
     $(this).toggleClass('active');
 });
 </script>
- <section class="big-background">
+ <section class="big-background" class=".hidden-sm">
     <a id="bgndVideo" class="player" data-property="{
         videoURL:'https://www.youtube.com/watch?v=w11ehEx7kro',
         containment: '#youtube-wrap',
@@ -160,8 +140,8 @@ $('.youtube_valume').on('click', function() {
                             <li><a href="#">About us(Coming Soon)</a></li>
                             <li><a href="#">For the Admines(Coming Soon)</a></li>                            
                             <li><a href="#">Link (Coming Soon)</a></li>
-                            <!-- <li><a href="#"><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPToggleVolume()">ミュート/ミュート解除(機能しません)</button>
-                            <button style="vertical-align: middle" onclick="jQuery('#youtube').YTPUnmute()">ミュート解除(機能しません)</button></a></li> -->
+                            <!-- <li><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPToggleVolume()">ミュート/ミュート解除</button></li>
+                            <li><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPUnmute()">ミュート解除</button></li> -->
                         </ul>
                     </div>
                 </div>
@@ -186,6 +166,9 @@ $('.youtube_valume').on('click', function() {
                             ダンジョンから零式、絶、PVP、F.A.T.E.やモブハント、そしてボズヤ戦線に至る全てのサポートします<br>
                             <br>
                             </p>
+                                <div>
+                                    <a id="update_button" href="#" target="_blank" class="btn btn-default center-block">詳しくはこちら</a> 
+                                </div>
                         </div>
                     </div>
 
@@ -223,17 +206,17 @@ $('.youtube_valume').on('click', function() {
                             <div class="about-section-container">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4>タイトル未定</h4>
+                                        <h4>Guilded</h4>
                                     </div>
                                     <!--  #c0c0c0	 -->
 
                                     <div class="panel-body">
                                         <div class="menu-inner">
-                                        <p>中身未定</p>    
+                                            <iframe src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2FyjKGYr7j" width="268" height="380" frameborder="0" scrolling="no"></iframe>
                                         </div>
                                     </div>
                                     <div class="panel-footer" tyle="font-size:80%;">
-                                            <a id="update_button" href="#" target="_blank" class="btn btn-default btn-block">未定</a> 
+                                            <a id="update_button" href="https://www.guilded.gg/The-Meg?invitedBy=ndl38bb4&inviteId=aEAXmMYp" target="_blank" class="btn btn-default btn-block">Connect Server</a> 
                                     </div>
                                 </div>  
                             </div>
