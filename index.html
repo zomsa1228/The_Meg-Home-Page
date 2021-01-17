@@ -85,37 +85,45 @@
             myPlayer = jQuery("#youtube").YTPlayer({});
 
     </script> -->
+    <div class="visible-lg-block">
+        <script type="text/javascript">
+            $('#youtube').YTPlayer();
+            
+            $('.youtube_valume').on('click', function() {
+                $('#youtube').YTPToggleVolume();
+                $(this).toggleClass('active');
+            });
+            </script>
+        </div>
 </head>
 <body>
-
-<script type="text/javascript">
-$('#youtube').YTPlayer();
-
-$('.youtube_valume').on('click', function() {
-    $('#youtube').YTPToggleVolume();
-    $(this).toggleClass('active');
-});
-</script>
- <section class="big-background" class=".hidden-sm">
-    <a id="bgndVideo" class="player" data-property="{
-        videoURL:'https://www.youtube.com/watch?v=w11ehEx7kro',
-        containment: '#youtube-wrap',
-        loop:1,
-        containment:'body',
-        autoPlay:true, 
-        mute:true, 
-        startAt:0,
-        opacity:1,
-        showControls: false,
-        showYTLogo: false,
-        onReady: function( player ) {
-            $('.loading').hide('slow');
-          }
-        }"></a>      
+ <section class="big-background">
+    <div class="visible-lg-block">
+        <a id="youtube" class="player"  Class="visible-lg-inline" data-property="{
+            videoURL:'https://www.youtube.com/watch?v=w11ehEx7kro',
+            containment: '#youtube-wrap',
+            loop:1,
+            containment:'body',
+            autoPlay:true, 
+            mute:true, 
+            startAt:0,
+            opacity:1,
+            showControls: false,
+            showYTLogo: false,
+            onReady: function( player ) {
+                $('.loading').hide('slow');
+            }
+            }">
+        </a>
+    </div>      
         <div class="pattern">
             <div class="background ">
                 <div class="big-background-container">
-                    <div class="loading"><h1>Now Loading...</h1></div>
+                    <div class="visible-lg-block">
+                        <div class="loading">
+                            <h1>Now Loading...</h1>
+                        </div>
+                    </div>
                     <h1 class="title">The Meg.
                     <br/>Japan FF14 Discord Server<br/><hr Class="hr"></h1>
                 </div>            
@@ -140,8 +148,8 @@ $('.youtube_valume').on('click', function() {
                             <li><a href="#">About us(Coming Soon)</a></li>
                             <li><a href="#">For the Admines(Coming Soon)</a></li>                            
                             <li><a href="#">Link (Coming Soon)</a></li>
-                            <!-- <li><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPToggleVolume()">ミュート/ミュート解除</button></li>
-                            <li><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPUnmute()">ミュート解除</button></li> -->
+                            <li class="visible-lg-inline"><a href="#"><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPToggleVolume()">ミュート切り替え</button></a></li>
+                            <!-- <li><button style="vertical-align: middle" onclick="jQuery('#youtube').YTPUnmute()">ミュート解除</button></li> -->
                         </ul>
                     </div>
                 </div>
